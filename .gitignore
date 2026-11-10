@@ -1,0 +1,30 @@
+# Entorno virtual y Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Archivos crudos pesados masivos (mantener estructura con .gitkeep)
+netflix_recommender/data/raw/*
+!netflix_recommender/data/raw/.gitkeep
+bindingdb_recommender/data/raw/*
+!bindingdb_recommender/data/raw/.gitkeep
+
+# Archivos comprimidos temporales
+*.zip
+*.tar.gz
+*.dmp
+*.tsv
+*.txt
+!netflix_recommender/data/raw/.gitkeep
+!bindingdb_recommender/data/raw/.gitkeep
+
+# Mantener procesados Parquet y CSR
+!netflix_recommender/data/processed/*.parquet
+!netflix_recommender/data/processed/*.npz
+!bindingdb_recommender/data/processed/*.parquet
+!bindingdb_recommender/data/splits/*/*.parquet
